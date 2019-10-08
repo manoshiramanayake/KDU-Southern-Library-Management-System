@@ -7,15 +7,15 @@ import javax.swing.JOptionPane;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author User
  */
-public class Loading extends javax.swing.JFrame implements Runnable{
-Connection conn;
-int s=0;
-Thread th;
+public class Loading extends javax.swing.JFrame implements Runnable {
+
+    Connection conn;
+    int s = 0;
+    Thread th;
 
     /**
      * Creates new form Loading
@@ -23,35 +23,37 @@ Thread th;
     public Loading() {
         super("Loading");
         initComponents();
-        th= new Thread((Runnable)this);
+        th = new Thread((Runnable) this);
     }
-    
-    public void setUploading(){
+
+    public void setUpLoading() {
         setVisible(false);
         th.start();
     }
-    
-    public void run(){
-        try{
-            for(int i=1;i<=200;i++){
-                s=s+1;
-                int m=jProgressBar1.getMaximum();
-                int v=jProgressBar1.getValue();
-                if(v<m){
-                    jProgressBar1.setValue(jProgressBar1.getValue()+1);
-                    
-                }else{
-                    i=201;
+
+    public void run() {
+        try {
+            for (int i = 1; i <= 200; i++) {
+                s = s + 1;
+                int m = jProgressBar1.getMaximum();
+                int v = jProgressBar1.getValue();
+                if (v < m) {
+                    jProgressBar1.setValue(jProgressBar1.getValue() + 1);
+
+                } else {
+                    i = 201;
                     setVisible(false);
-                    Home ob=new Home();
-                }Thread.sleep(50);
-                
+                    Home ob = new Home();
+                    ob.setVisible(true);
+                }
+                Thread.sleep(50);
+
             }
-        }catch(Exception e){
+        } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e);
         }
     }
- 
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -68,12 +70,11 @@ Thread th;
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 204, 204), 2));
 
         jProgressBar1.setStringPainted(true);
-
-        jLabel3.setIcon(new javax.swing.ImageIcon("E:\\KDU\\SE Project Docs\\KDU Southern Library Management System\\resource\\books.png")); // NOI18N
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 204));
