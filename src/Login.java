@@ -2,8 +2,6 @@
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import javax.swing.JOptionPane;
-import javax.swing.JSplitPane;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -219,8 +217,7 @@ public class Login extends javax.swing.JFrame {
                 .addGap(23, 23, 23))
         );
 
-        setSize(new java.awt.Dimension(430, 343));
-        setLocationRelativeTo(null);
+        pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
@@ -237,34 +234,6 @@ public class Login extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        String sql="select *from Account where Username=? and Password=?";
-        try{
-            pst=conn.prepareStatement(sql);
-            pst.setString(1, jTextField1.getText());
-            pst.setString(2,jPasswordField1.getText());
-            rs=pst.executeQuery();
-            if(rs.next()){
-                rs.close();
-                pst.close();
-                
-                setVisible(false);
-                Loading ob=new Loading();
-                ob.setUploading();
-                ob.setVisible(true);
-               
-            }else {
-                JOptionPane.showMessageDialog(null,"Incorrect Username and Password");
-            }
-        }catch(Exception e){
-            JOptionPane.showMessageDialog(null, e);
-        }finally{
-            try{
-                rs.close();
-                pst.close();
-            }catch(Exception e){
-                
-            }
-        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jPasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField1ActionPerformed
@@ -289,9 +258,9 @@ public class Login extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                /*if ("Nimbus".equals(info.getName())) {
+                if ("Nimbus".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;*/
+                    break;
                 }
             }
         } catch (ClassNotFoundException ex) {
