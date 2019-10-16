@@ -48,7 +48,7 @@ public class AddPublisher extends javax.swing.JFrame {
 
         jButton1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(204, 0, 0));
-        jButton1.setIcon(new javax.swing.ImageIcon("E:\\KDU\\SE Project Docs\\KDU Southern Library Management System\\resource\\User.png")); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/businessman-talking-about-data-analysis.png"))); // NOI18N
         jButton1.setText("Add Publisher");
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
