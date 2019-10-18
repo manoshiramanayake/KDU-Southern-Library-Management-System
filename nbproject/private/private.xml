@@ -3,6 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/E:/project/KDU-Southern-Library-Management-System/src/IssueOfBooks.java</file>
             <file>file:/E:/project/KDU-Southern-Library-Management-System/src/Return.java</file>
             <file>file:/E:/project/KDU-Southern-Library-Management-System/src/Forgot.java</file>
@@ -10,6 +11,11 @@
             <file>file:/E:/project/KDU-Southern-Library-Management-System/src/AddPublisher.java</file>
             <file>file:/E:/project/KDU-Southern-Library-Management-System/src/add-group%20(1).png</file>
             <file>file:/E:/project/KDU-Southern-Library-Management-System/src/Home.java</file>
+=======
+            <file>file:/E:/KDU/SE%20Project%20Docs/KDU%20Southern%20Library%20Management%20System/src/Login.java</file>
+            <file>file:/E:/KDU/SE%20Project%20Docs/KDU%20Southern%20Library%20Management%20System/src/Home.java</file>
+            <file>file:/E:/KDU/SE%20Project%20Docs/KDU%20Southern%20Library%20Management%20System/src/Loading.java</file>
+>>>>>>> b95e0a36535f09bd2ec45e7011c8db00511f5e28
         </group>
     </open-files>
 </project-private>

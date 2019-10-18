@@ -76,7 +76,6 @@ public class AddBook extends javax.swing.JFrame {
 
         jButton1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(204, 0, 0));
-        jButton1.setIcon(new javax.swing.ImageIcon("E:\\KDU\\SE Project Docs\\KDU Southern Library Management System\\resource\\Save.png")); // NOI18N
         jButton1.setText("Add Book");
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
@@ -113,7 +112,7 @@ public class AddBook extends javax.swing.JFrame {
                             .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(89, 89, 89)
+                        .addGap(99, 99, 99)
                         .addComponent(jButton1)))
                 .addContainerGap())
         );

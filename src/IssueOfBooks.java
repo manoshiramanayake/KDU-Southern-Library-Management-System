@@ -65,7 +65,7 @@ public class IssueOfBooks extends javax.swing.JFrame {
 
         jButton1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 0, 0));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Save.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resource/Save.png"))); // NOI18N
         jButton1.setText("Add");
 
         jTextField1.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
